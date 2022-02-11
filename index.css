@@ -1,0 +1,242 @@
+@font-face {
+    font-family: poppins-extralight;
+    src: url(./fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: poppins-semibold;
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+head {
+    position: relative;
+}
+.main-header-section {
+    background-color: #030303;
+    height: 60px;
+}
+.facebook::before {
+    content: "\e900";
+    font-family: icomoon;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.twitter::before {
+    content: "\e901";
+    font-family: icomoon;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.linkedin::before {
+    content: "\e902";
+    font-family: icomoon;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.instagram::before {
+    content: "\e903";
+    font-family: icomoon;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.pinterest::before {
+    content: "\e904";
+    font-family: icomoon;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.header-un-order-list {
+    list-style-type: none;
+}
+.header-un-order-list > li {
+    padding-right: 16px;
+}
+.header-un-order-list {
+    display: block;
+}
+.li-link-item {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: poppins-regular;
+    font-size: 18px;
+}
+.li-link-item:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+.phone-number-whatsapp {
+    text-decoration: none;
+    color: #ffffff;
+}
+.phone-number-whatsapp:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+.phone::before {
+    content: "\e905";
+    font-family: icomoon;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.whatsapp::before {
+    content: "\e906";
+    font-family: icomoon;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.nav-list-items {
+    color: #000000;
+    font-family: poppins-medium;
+    font-size: 22px;
+}
+.nav-list-items:hover {
+    color: #000000;
+}
+.image-container {
+    background-image: url(./Resources/Background.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+
+}
+.image-container::before {
+    position: relative;
+    background-image: linear-gradient(rgb(31,37,61,0),rgb(17, 18, 24));
+    position: absolute;
+    content: "";
+    top: 20%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.header-digital-text {
+    font-family: poppins-regular;
+    font-size: 45px;
+    color: #ffffff;
+    z-index: 1;
+}
+.header-seo-text {
+    font-family: poppins-semibold;
+    font-size: 55px;
+    color: #ffffff;
+    z-index: 1;
+}
+.my-form {
+    min-height: 200px;
+    background-color: #F43535;
+}
+.bg-form-container {
+    position: relative;
+}
+.form-container {
+    padding-left:100px;
+    padding-right: 100px;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    width: 100%;
+}
+.input-field {
+    width: 300px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: poppins-regular;
+    font-size: 20px;
+}
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+.form {
+    width: 100%;
+}
+.form-request-text {
+    color: #fff;
+    font-family: poppins-regular;
+}
+.form-risk-text {
+    color: #fff;
+    font-family: poppins-semibold;
+}
+.request-btn {
+    background-color: #DD4444;
+    border: 0;
+    width: 190px;
+    height: 100px;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: start;
+    font-family: poppins-semibold;
+    font-size: 25px;
+    margin: 10px;
+}
+.para-digital-text {
+    text-align: center;
+    color: #222222;
+    position: relative;
+    top: 180px;
+    font-family: poppins-extralight;
+    font-size: 30px;
+}
+@media screen and (max-width:1800px) {
+    .input-field {
+        width: 180px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .para-digital-text {
+        font-size: 22px;
+    }
+    .request-btn {
+        width: 160px;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 21px;
+    }
+    .header-digital-text {
+        font-size: 30px;
+    }
+    .header-seo-text {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:1400px) {
+    .nav-list-items {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:1024px) {
+  .input-field {
+      margin: 10px;
+  }
+ 
+}
+@media screen and (max-width:850px) {
+    .para-digital-text {
+        top: 300px;
+        font-size: 20px;
+    }
+}
