@@ -23,7 +23,7 @@ head {
 }
 .main-header-section {
     background-color: #030303;
-    height: 60px;
+    min-height: 60px;
 }
 .facebook::before {
     content: "\e900";
@@ -62,18 +62,16 @@ head {
 }
 .header-un-order-list {
     list-style-type: none;
+    padding: 0;
 }
 .header-un-order-list > li {
     padding-right: 16px;
-}
-.header-un-order-list {
-    display: block;
 }
 .li-link-item {
     text-decoration: none;
     color: #ffffff;
     font-family: poppins-regular;
-    font-size: 18px;
+    font-size: 13px;
 }
 .li-link-item:hover {
     text-decoration: none;
@@ -101,19 +99,25 @@ head {
     font-size: 14px;
     padding-left: 10px;
 }
+.logo {
+    width: 160px;
+}
 .nav-list-items {
     color: #000000;
     font-family: poppins-medium;
-    font-size: 22px;
+    font-size: 14px;
 }
 .nav-list-items:hover {
     color: #000000;
+}
+.bg-form-container {
+    position: relative;
 }
 .image-container {
     background-image: url(./Resources/Background.png);
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 670px;
     position: relative;
 
 }
@@ -139,40 +143,35 @@ head {
     color: #ffffff;
     z-index: 1;
 }
-.my-form {
-    min-height: 200px;
-    background-color: #F43535;
-}
-.bg-form-container {
-    position: relative;
+.outer-form-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-container {
-    padding-left:100px;
-    padding-right: 100px;
-    position: absolute;
-    top: 500px;
-    left: 0;
-    width: 100%;
+    background-color: #F43535;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
 .input-field {
-    width: 300px;
+    width: 220px;
     background-color: transparent;
     border: 0;
     outline: 0;
     border-bottom: 1px solid #ffffff;
     color: #ffffff;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 12px;
     font-family: poppins-regular;
-    font-size: 20px;
+    font-size: 14px;
 }
 ::-webkit-input-placeholder {
     color: #ffffff;
 }
-.form {
-    width: 100%;
-}
 .form-request-text {
+    font-size: 14px;
     color: #fff;
     font-family: poppins-regular;
 }
@@ -182,61 +181,51 @@ head {
 }
 .request-btn {
     background-color: #DD4444;
+    max-width: 150px;
     border: 0;
-    width: 190px;
-    height: 100px;
+    outline: 0;
+    cursor: pointer;
     color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     text-align: start;
     font-family: poppins-semibold;
-    font-size: 25px;
+    font-size: 16px;
     margin: 10px;
 }
-.para-digital-text {
-    text-align: center;
-    color: #222222;
-    position: relative;
-    top: 180px;
-    font-family: poppins-extralight;
-    font-size: 30px;
-}
-@media screen and (max-width:1800px) {
-    .input-field {
-        width: 180px;
-        margin-left: 15px;
-        margin-right: 15px;
+
+
+@media screen and (min-width:1024px) {
+    .li-link-item {
+        font-size: 16px;
     }
-    .para-digital-text {
-        font-size: 22px;
-    }
-    .request-btn {
-        width: 160px;
-        padding-left: 12px;
-        padding-right: 12px;
-        font-size: 21px;
-    }
-    .header-digital-text {
-        font-size: 30px;
-    }
-    .header-seo-text {
-        font-size: 40px;
-    }
-}
-@media screen and (max-width:1400px) {
     .nav-list-items {
         font-size: 18px;
     }
+    .outer-form-container {
+        position: absolute;
+        top: 550px;
+        left: 0;
+    }
 }
-@media screen and (max-width:1024px) {
-  .input-field {
-      margin: 10px;
-  }
- 
+
+@media screen and (min-width:1440px) {
+    .li-link-item {
+        font-size: 18px;
+    }
+    .nav-list-items {
+        font-size: 22px;
+    }
 }
-@media screen and (max-width:850px) {
-    .para-digital-text {
-        top: 300px;
-        font-size: 20px;
+@media screen and (min-width:1800px) {
+    .input-field {
+        width: 300px;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+        margin: 12px;
+        font-family: poppins-regular;
+        font-size: 22px;
     }
 }
